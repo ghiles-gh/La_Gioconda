@@ -1,0 +1,407 @@
+                    @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Jersey+25+Charted&family=Teko:wght@300..700&display=swap');
+                    * {
+                        padding: 0;
+                        margin: 0 auto;
+                        box-sizing: border-box;
+                        scroll-behavior: smooth;
+                        font-family: "Teko", sans-serif;
+                        font-weight: 100;
+                        font-style: normal;
+                    }
+                    
+                    body {
+                        position: relative;
+                        background: url(../images/pexels-andrebeltrame-1878344.jpg) center;
+                        background-attachment: fixed;
+                        background-size: cover;
+                    }
+                    
+                    .up {
+                        position: fixed;
+                        bottom: 0;
+                        right: 0;
+                        width: 40px;
+                        height: 40px;
+                        background-color: white;
+                        color: #012f13a6;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 30px;
+                        border-radius: 50%;
+                        margin: 10px;
+                        display: none;
+                        animation: up-down 2s infinite alternate;
+                        cursor: pointer;
+                    }
+                    
+                    header {
+                        height: 90px;
+                        z-index: 999;
+                        transition: all 1s;
+                    }
+                    
+                    .sticky {
+                        top: 0;
+                    }
+                    
+                    .container {
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+                    
+                    header .container .logo {
+                        width: 100px;
+                        height: 100px;
+                        animation: rot infinite alternate forwards linear 2s;
+                    }
+                    
+                    header .container .logo img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                    header .container nav ul {
+                        display: flex;
+                        align-items: center;
+                        gap: 40px;
+                        align-items: center;
+                        list-style: none;
+                    }
+                    
+                    nav ul li h5:hover {
+                        color: #141408;
+                        cursor: pointer;
+                        transition: color;
+                        transition-duration: 1s;
+                    }
+                    
+                    @keyframes rot {
+                        0% {
+                            transform: rotate(0);
+                        }
+                        10% {
+                            transform: rotate(20deg);
+                        }
+                        20% {
+                            transform: rotate(40deg);
+                        }
+                        30% {
+                            transform: rotate(60deg);
+                        }
+                        40% {
+                            transform: rotate(80deg);
+                        }
+                        50% {
+                            transform: rotate(100deg);
+                        }
+                        60% {
+                            transform: rotate(120deg);
+                        }
+                        70% {
+                            transform: rotate(160deg);
+                        }
+                        80% {
+                            transform: rotate(180deg);
+                        }
+                        90% {
+                            transform: rotate(260deg);
+                        }
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+                    
+                    nav ul li h5 {
+                        font-size: 20px;
+                        color: white;
+                    }
+                    
+                    .adr,
+                    .phone {
+                        font-size: 20px;
+                        color: white;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    
+                    .adr:hover {
+                        color: #141408;
+                        transition: all 2s;
+                    }
+                    
+                    .adresse,
+                    .phoneNum {
+                        width: 0px;
+                        opacity: 0;
+                        height: 0px;
+                        transform-origin: left;
+                        background-color: white;
+                        text-align: center;
+                        border-radius: 5px;
+                        transition: width 1s, opacity 1s;
+                        color: #012f13a6;
+                        padding: 4px;
+                    }
+                    
+                    .showadr {
+                        width: 350px;
+                        height: 40px;
+                        opacity: 1;
+                    }
+                    
+                    .showphone {
+                        width: 100px;
+                        height: 40px;
+                        opacity: 1;
+                    }
+                    
+                    .Form {
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    .Form .container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 50px;
+                        width: 90%;
+                        padding: 20px;
+                        background-color: #141408ad;
+                        border-top-left-radius: 200px;
+                        border-bottom-left-radius: 200px;
+                        transform: translateX(80px);
+                        position: relative;
+                    }
+                    
+                    .Form .container form {
+                        justify-content: center;
+                        flex-direction: column;
+                        gap: 20px;
+                        align-items: center;
+                        width: 60%;
+                        height: 400px;
+                        border-radius: 5px;
+                        display: flex;
+                        backdrop-filter: blur(16px);
+                    }
+                    
+                    .showform {
+                        opacity: 1;
+                        transition: opacity 2s;
+                    }
+                    
+                    .Form .container form::before {
+                        position: absolute;
+                    }
+                    
+                    .Form .container form #email,
+                    #message,
+                    #Nom,
+                    #Prenom,
+                    #tel {
+                        width: 60%;
+                        height: 40px;
+                        font-size: 20px;
+                        outline: none;
+                        color:white;
+                        padding: 7px;
+                        border: none;
+                        cursor: text;
+                        background-color: transparent;
+                        border-radius: 22px;
+                        border: #141408 2px double;
+                    }
+                    
+                    .Form .container form #email:focus,
+                    .Form .container form #message:focus {
+                        font-size: 17px;
+                        transition: all 0.5s;
+                    }
+                    
+                    .Form .container form #email::placeholder,
+                    #message::placeholder,
+                    #Nom::placeholder,
+                    #Prenom::placeholder,
+                    #tel::placeholder {
+                        color: white;
+                    }
+                    
+                    label {
+                        color: white;
+                        font-size: 20px;
+                    }
+                    
+                    #email,
+                    #tel {
+                        display: none;
+                    }
+                    
+                    .Form .container form #message {
+                        width: 60%;
+                        height: 80px;
+                    }
+                    
+                    .Form .container form button {
+                        width: 14%;
+                        height: 30px;
+                        border-radius: 5px;
+                        outline: none;
+                        border: none;
+                        background-color: #141408;
+                        color: black;
+                        font-size: 15px;
+                        padding: 5px;
+                        cursor: pointer;
+                    }
+                    
+                    .Form .container form button:hover {
+                        background-color: white;
+                        color: #141408;
+                        transition: all 1s;
+                    }
+                    
+                    .Form .container .Map {
+                        width: 50%;
+                        position: relative;
+                    }
+                    
+                    .Form .container .Map span {
+                        font-size: 30px;
+                        position: absolute;
+                        left: 200px;
+                        bottom: 124px;
+                        color: white;
+                    }
+                    
+                    .Form .container .Map iframe {
+                        border-radius: 4px;
+                    }
+                    
+                    .showmap {
+                        opacity: 1;
+                        transition: opacity 2s;
+                    }
+                    
+                    .Form .cont {
+                        width: 100px;
+                        height: 100px;
+                        background-color: #141408;
+                        display: flex;
+                        justify-content: end;
+                        align-items: center;
+                        border-radius: 50%;
+                        font-size: 20px;
+                        color: white;
+                        animation: up-down 2s infinite alternate;
+                        position: absolute;
+                        left: -30px;
+                        cursor: pointer;
+                    }
+                    
+                    @keyframes up-down {
+                        0% {
+                            transform: translateY(20px);
+                        }
+                        50% {
+                            transform: translateY(0);
+                        }
+                        100% {
+                            transform: translateY(-20px);
+                        }
+                    }
+                    
+                    footer {
+                        margin-top: 20px;
+                        height: 40vh;
+                        background-color: #141408;
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+                    
+                    footer .liens {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 90%;
+                    }
+                    
+                    footer .liens .lien {
+                        list-style: none;
+                        font-size: 25px;
+                        width: 50%;
+                        position: relative;
+                        color: white;
+                        cursor: pointer;
+                        border-right: 1px white double;
+                    }
+                    
+                    footer .liens .lien li::before {
+                        content: '\f805';
+                        font-family: "Font Awesome 6 Free";
+                        font-weight: 900;
+                        margin-right: 8px;
+                        color: white;
+                    }
+                    
+                    footer .liens .lien li:hover {
+                        font-size: 20px;
+                        transition: all 0.5s;
+                        opacity: 0.5;
+                    }
+                    
+                    footer .liens .social {
+                        display: flex;
+                        gap: 10px;
+                    }
+                    
+                    footer .liens .social a {
+                        margin-left: 10px;
+                        font-size: 20px;
+                        color: white;
+                        display: block;
+                    }
+                    
+                    footer .liens .social a:hover {
+                        animation-play-state: paused;
+                    }
+                    
+                    footer .liens .logo {
+                        width: 85px;
+                        height: 85px;
+                    }
+                    
+                    footer .liens .logo img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                    
+                    footer .liens .social .face {
+                        animation: up-down 2s infinite alternate;
+                    }
+                    
+                    footer .liens .social .insta {
+                        animation: up-down 2s infinite alternate;
+                        animation-delay: 2s;
+                    }
+                    
+                    footer .liens .social .tik {
+                        animation: up-down 2s infinite alternate;
+                        animation-delay: 2s;
+                    }
+                    
+                    footer .copyright {
+                        font-size: 25px;
+                        text-shadow: -4px -2px 2px white;
+                    }

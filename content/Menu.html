@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style/Menu.css" />
+    <title>Menu</title>
+  </head>
+
+  <body>
+    <div class="searchBar">
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="cherche ton plat ici"
+      />
+    </div>
+    <div class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+    <button class="AccBtn" onclick="navigateWithDelay('../index.html',5000)">
+      <i class="fa-solid fa-house-user"></i>
+    </button>
+    <h1 class="MENU">Menu</h1>
+    <div class="container">
+      <section class="Plats Principeaux" id="princ">
+        <h1 class="plattype">Plats Principeaux</h1>
+        <div class="container">
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Poulet rôti</h1>
+              <p>
+                Poulet entier, huile d'olive, sel, poivre, herbes de votre choix
+                (thym, romarin, etc.)
+              </p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/princ/pouletroti.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>300 dz</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Saumon grillé</h1>
+              <p>Filet de saumon, huile d'olive, sel, poivre, jus de citron.</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/princ/fish-8629510_1280.png" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>250 dz</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Omelette aux légumes</h1>
+              <p>
+                Oeufs, légumes (tomates, épinards, poivrons, etc.), sel, poivre,
+                huile d'olive ou beurre.
+              </p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/princ/omlette.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>150 dz</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Pâtes à la sauce tomate</h1>
+              <p>Pâtes, ,Sauce tomate ,Fromage râpé</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/princ/pastatomat.png" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>150 dz</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Goulache</h1>
+              <p>Viande (généralement boeuf) ,Oignons, Paprika</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/princ/goulache.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>150 dz</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Kentaké</h1>
+              <p>Poulet frit, Panure (farine, épices), Huile pour frire</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/princ/kentaki.png" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>300 dz</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Plats Dessert" id="des">
+        <h1 class="plattype">Dessert</h1>
+
+        <div class="container">
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Crêpes Algériennes</h1>
+              <p>Farine, œufs, lait, sucre, beurre.</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/desert/crepes.png" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>150 dz</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Tarte pomme</h1>
+              <p>Pommes, ,Pâte brisée ou feuilletée, Sucre</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/desert/tarta pomme.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>200 dz</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Créme Caramel</h1>
+              <p>Œufs, ,Sucre, Lait</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/desert/creme caramel.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>100 dz</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Beghrir</h1>
+              <p>Semoule fine, ,Eau ou lait, Levure</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/desert/bghrir.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>200 dz</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Gateau orange</h1>
+              <p>Oranges, ,Sucre, Farine</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/desert/gorange.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>150 dz</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Besboussa</h1>
+              <p>Semoule, ,Sucre, Yaourt ou lait</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/desert/besbousa.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>120 dz</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Plats Entrées" id="ent">
+        <h1 class="plattype">Plats Entrées</h1>
+
+        <div class="container">
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Salade algérienne</h1>
+              <p>Tomates, , Concombre, Poivrons</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/entree/salade.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>200 da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Brick à l'œuf</h1>
+              <p>Feuille de brick, ,Œufs, Viande hachée ou thon</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/entree/brick.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>250 da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Chorba</h1>
+              <p>Viande, ,Pois chiches, Tomates</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/entree/chorba.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>150 da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Mechouia</h1>
+              <p>Poivrons, ,Tomates, Oignons</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/entree/mechouia.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>200 da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Salade de carottes</h1>
+              <p>Carottes, ,Jus de citron, Cumin</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/entree/scarrote.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>100 da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Houmous</h1>
+              <p>Pois chiches, ,Tahini (pâte de sésame), Ail, citron</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/entree/Houmous.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>250 da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Plats sandwich" id="san">
+        <h1 class="plattype">Sandwishes</h1>
+
+        <div class="container">
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Tacos</h1>
+              <p>Galette de maïs ou blé, Viande (boeuf, poulet), Fromage</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/sandwich/tacos.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>350 da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Mariné</h1>
+              <p>Viande marinée (au choix), Pain, Sauce (au choix)</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/sandwich/mariné.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>200 da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Chapati</h1>
+              <p>Pain Chapati, Viande ou légumes, Sauce (au choix)</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/sandwich/chapati.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>170 da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Burrito Méxicain</h1>
+              <p>Tortilla de blé, Viande ou légumes, Riz et haricots</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/sandwich/burrito.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>400 da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Burger</h1>
+              <p>
+                Pain à burger, Viande hachée (bœuf, poulet), Légumes (laitue,
+                tomate, oignon)
+              </p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/sandwich/burger.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>250 da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Sandwish Frittes omlettes</h1>
+              <p>Pain, Frites, Oeufs, légumes (au choix)</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/sandwich/frittesandwish.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>150 da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Plats pizza" id="piz">
+        <h1 class="plattype">Pizza</h1>
+        <div class="container">
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Pizza Normal</h1>
+              <p>Pâte à pizza, Sauce tomate, Fromage</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/pizza/normal.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>200 da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Pizza Poisé</h1>
+              <p>
+                Pâte à pizza, Sauce tomate ou crème fraîche, Poisson (saumon,
+                thon)
+              </p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/pizza/poisé.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>350da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Pizza Champignion</h1>
+              <p>Pâte à pizza, Sauce tomate, Champignons</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/pizza/champinion.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>350da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Pizza 4 Saisons</h1>
+              <p>
+                Pâte à pizza, Sauce tomate, Différents légumes et ingrédients
+                (champignons, poivrons, artichauts)
+              </p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/pizza/4saison.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>500da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Pizza Frommage</h1>
+              <p>
+                Pâte à pizza, Sauce tomate, Différents fromages (mozzarella,
+                cheddar)
+              </p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/pizza/4fromage.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>300da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Pizza Jambon</h1>
+              <p>Pâte à pizza, Sauce tomate, Jambon</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/pizza/frommage jombon.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>650da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Plats drinks" id="boi">
+        <h1 class="plattype">drinks</h1>
+
+        <div class="container">
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Mokhito</h1>
+              <p>Feuilles de menthe, Citron vert, Eau gazeuse</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/drinks/Mokhito.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>150da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Lassi</h1>
+              <p>Yaourt, Eau ou lait, Sucre ou sel</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/drinks/Lassi.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>120da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>tous les boissons</h1>
+              <p>Différents types de boissons gazeuses et non gazeuses</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/drinks/boissons.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>100da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Cherbat</h1>
+              <p>Eau, Jus de citron, Sucre</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/drinks/cherbat.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>100da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Jus de fruits</h1>
+              <p>Fruits (oranges, pommes), Eau</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/drinks/fruits.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>120da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+          <div class="box-plat">
+            <div class="ingr-plat">
+              <h1>Thé</h1>
+              <p>Feuilles de thé, Eau, Sucre (facultatif)</p>
+            </div>
+            <div class="img-plat">
+              <img src="../images/drinks/the.jpg" alt="" />
+            </div>
+            <div class="price-plat">
+              <h5>70da</h5>
+              <button id="navigateButton">
+                <i class="fa-solid fa-dumpster-fire"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="up"><i class="fa-regular fa-circle-up"></i></div>
+
+    <div class="sidebar">
+      <ul class="sidebplats">
+        <li>
+          <a href="#princ">
+            <h5>Principeaux</h5>
+          </a>
+        </li>
+        <li>
+          <a href="#ent">
+            <h5>Entrées</h5>
+          </a>
+        </li>
+        <li>
+          <a href="#des">
+            <h5>Desserts</h5>
+          </a>
+        </li>
+        <li>
+          <a href="#boi">
+            <h5>Boissons</h5>
+          </a>
+        </li>
+        <li>
+          <a href="#piz">
+            <h5>Pizza</h5>
+          </a>
+        </li>
+        <li>
+          <a href="#san">
+            <h5>Sandwishes</h5>
+          </a>
+        </li>
+      </ul>
+      <ul class="sideicons">
+        <li>
+          <a href="#princ"><i class="fa-solid fa-bowl-food"></i></a>
+        </li>
+        <li>
+          <a href="#ent"><i class="fa-solid fa-plate-wheat"></i></a>
+        </li>
+        <li>
+          <a href="#des"><i class="fa-solid fa-cookie-bite"></i></a>
+        </li>
+        <li>
+          <a href="#boi"><i class="fa-solid fa-martini-glass-citrus"></i></a>
+        </li>
+        <li>
+          <a href="#piz"><i class="fa-solid fa-pizza-slice"></i></a>
+        </li>
+        <li>
+          <a href="#san"><i class="fa-solid fa-burger"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="../javascript/Menu.js"></script>
+  </body>
+</html>

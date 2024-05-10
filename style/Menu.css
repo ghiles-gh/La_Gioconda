@@ -1,0 +1,296 @@
+    @import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Jacquard+12+Charted&family=Jersey+10&family=Kaushan+Script&family=Orbitron:wght@400..900&display=swap');
+    * {
+        padding: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: "Orbitron", sans-serif;
+        font-family: "Kaushan Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .container {
+        width: 85%;
+    }
+    
+    body {
+        background: url(../images/menu.jpg);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .searchBar {
+        width: 30%;
+        height: 50px;
+        background-color: #9b5c09;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        right: 0;
+        transition: all 1s;
+        border-bottom-left-radius: 22px;
+        border-bottom-right-radius: 22px;
+    }
+    
+    .showSearch {
+        top: 0;
+    }
+    
+    .searchBar input {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: none;
+        background: transparent;
+        color: white;
+        padding: 10px;
+    }
+    
+    .AccBtn {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 50px;
+        height: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #9b5c09;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: none;
+        outline: none;
+    }
+    
+    .searchBar input::placeholder {
+        color: white;
+    }
+    
+    .searchBtn {
+        width: 48px;
+        height: 48px;
+        color: white;
+        background-color: #9b5c09;
+        text-align: center;
+        padding: 14px;
+        margin-bottom: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .Plats {
+        height: 200vh;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        padding: 10px;
+        position: relative;
+    }
+    
+    .Plats .plattype {
+        background-color: #9b5c09;
+        padding: 3px;
+        transform: translate(-50px, -20px);
+        width: 200px;
+        height: 70px;
+        position: relative;
+    }
+    
+    .Plats .plattype::before {
+        content: '\f521';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        font-size: 40px;
+        position: absolute;
+        top: -34px;
+        left: -7px;
+        color: #9b5c09;
+    }
+    
+    .Plats .plattype:hover {
+        transform: translate(10px);
+        transition: all 2s;
+    }
+    
+    .Plats .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .MENU{
+        color: #9b5c09;
+        font-size: 100px;
+        position: absolute;
+        width: 10%;
+        top: 70px;
+        left: 0;
+        right: 0;
+    }
+    .Plats .container .box-plat {
+        width: 44%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: aliceblue;
+        box-sizing: border-box;
+        border-radius: 20px;
+        backdrop-filter: contrast(1.5);
+        position: relative;
+        opacity: 0;
+    }
+    
+    .Plats .container .box-plat::before {
+        content: '\f2e7';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        font-size: 40px;
+        position: absolute;
+        top: -12px;
+        left: -12px;
+        color: #9b5c09;
+        transform: rotate(-23deg);
+    }
+    
+    .Plats .container .box-plat .ingr-plat {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        transform: rotate(-20deg);
+        backdrop-filter: contrast(3.5);
+    }
+    
+    .Plats .container .box-plat .ingr-plat :hover {
+        z-index: 999;
+        transform: scale(2) translateX(-40px);
+        background-color: black;
+        transition: all 0.8s;
+    }
+    
+    .Plats .container .box-plat .img-plat {
+        width: 50%;
+        height: 100px;
+        transform: rotate(-20deg);
+    }
+    
+    .Plats .container .box-plat .img-plat :hover {
+        transition: all 1s;
+        transform: scale(2) rotate(20deg);
+        z-index: 999;
+    }
+    
+    .Plats .container .box-plat .img-plat img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    .Plats .container .box-plat .price-plat {
+        text-align: center;
+        padding: 5px;
+        transform: rotate(-20deg);
+    }
+    
+    .Plats .container .box-plat .price-plat h5 {
+        font-size: 20px;
+    }
+    
+    .Plats .container .box-plat .price-plat button {
+        outline: none;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .Plats .container .box-plat .price-plat button:hover {
+        opacity: 0.3;
+        transition: opacity 1s;
+        background-color: #9b5c09;
+        cursor: pointer;
+    }
+    
+    .up {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        color: #9b5c09;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border-radius: 50%;
+        margin: 10px;
+        display: none;
+        animation: up-down 2s infinite alternate;
+        cursor: pointer;
+    }
+    
+    .sidebar {
+        position: fixed;
+        width: 300px;
+        height: 250px;
+        background-color: #9b5c09;
+        top: 70px;
+        left: -250px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .sidebar .sidebplats {
+        transform: translateX(100px);
+        gap: 15px;
+    }
+    
+    .sidebar ul {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .sidebar ul li {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    .sidebar li,
+    a {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .sidebar a:hover {
+        transform: scale(1.2);
+        transition: all 1s;
+    }
+    
+    .sidebar .sideicons {
+        transform: translateX(30px);
+        gap: 10px;
+    }
+    
+    .sidebar ul li a {
+        width: auto;
+        text-align: center;
+    }
